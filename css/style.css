@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background-color: #F0F0F0;
+    background-color: #FFF;
     color: #004057;
     font-family: Ubuntu, Arial, sans-serif;
 }
@@ -83,7 +83,7 @@ hr.fancy-line, hr.fancy-line:before {
 }
 
 .thumbnail.thumbnail-default {
-    background-color: rgba(255,255,255,0.5);
+    background-color: #f0f0f0;
 }
 
 .thumbnail img {
@@ -104,8 +104,7 @@ hr.fancy-line, hr.fancy-line:before {
     margin: 0;
 }
 .site-title a {
-    color: rgba(255,255,255, 0.8);
-    color: #60482a;
+    color: #fff;
     text-shadow: -1px -1px #fff;
     text-decoration: none;
 }
@@ -121,7 +120,7 @@ hr.fancy-line, hr.fancy-line:before {
 }
 
 .post {
-    background-color: #fff;
+    background-color: #f0f0f0;
     border-radius: 15px;
     margin: 0 auto 40px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -142,7 +141,7 @@ hr.fancy-line, hr.fancy-line:before {
 .post-heading {
     padding: 8px 15px;
     position: relative;
-    color: #ff5e73;
+    color: #70575A;
     height: 100px;
 }
 
@@ -151,7 +150,7 @@ hr.fancy-line, hr.fancy-line:before {
     height: 150px;
     overflow: hidden;
     position: relative;
-    background-color: #fff;
+    background-color: #f0f0f0;
 }
 
 .read-more-block:before {

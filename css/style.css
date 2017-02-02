@@ -87,7 +87,7 @@ hr.fancy-line, hr.fancy-line:before {
 }
 
 .thumbnail img {
-    max-width: 80%;
+    max-width: 100%;
     vertical-align: middle;
     margin: -100%;
     position: relative;

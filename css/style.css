@@ -75,7 +75,7 @@ hr.fancy-line, hr.fancy-line:before {
 
 
 .thumbnail {
-    width: 80%;
+    width: 100%;
     height: 200px;
     line-height: 200px;
     overflow: hidden;
@@ -87,7 +87,7 @@ hr.fancy-line, hr.fancy-line:before {
 }
 
 .thumbnail img {
-    max-width: 100%;
+    max-width: 80%;
     vertical-align: middle;
     margin: -100%;
     position: relative;

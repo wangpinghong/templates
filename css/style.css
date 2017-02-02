@@ -75,7 +75,7 @@ hr.fancy-line, hr.fancy-line:before {
 
 
 .thumbnail {
-    width: 100%;
+    width: 80%;
     height: 200px;
     line-height: 200px;
     overflow: hidden;

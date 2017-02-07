@@ -1,0 +1,97 @@
+/* ==========================================================================
+    font-family: 'source_sans_problack';
+    font-family: 'source_sans_proregular';
+    font-family: 'source_sans_prolight';
+   ========================================================================== */
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_problack';
+    src: url('../fonts/sourcesanspro-black-webfont.eot');
+    src: url('../fonts/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-black-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-black-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_prolight';
+    src: url('../fonts/sourcesanspro-light-webfont.eot');
+    src: url('../fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.web_site-header{text-align: center; padding-top: 65px; background: #fafafa; border-radius: 3px 3px 0 0;}
+.web_logo{display: inline-block;}
+.web_logo h1{font-size: 50px; line-height: 52px; color: #716a72; text-transform: uppercase; border-bottom: 1px solid #eaeaea;
+			 padding-bottom: 30px;  font-family: 'source_sans_problack'; letter-spacing: 7px;}
+.web_menu{padding-top: 40px; padding-bottom: 45px; text-align: center;}
+.web_menu .web_navbar{display: inline-block;  font-family: 'source_sans_prolight'; margin-bottom: 0;}
+.web_menu .web_navbar .web_collapse .web_nav .web_active > a {color: #c85b5f; background: none; background-image: none;}
+.web_menu .web_navbar .web_collapse .web_nav .web_active > a:hover{background: none; background-image: none; box-shadow: none;}
+.web_menu .web_navbar .web_collapse .web_nav > li > a {color: #716a72; font-size: 16px; text-transform: uppercase; padding-right: 75px; 
+                                text-shadow: none; box-shadow: none; letter-spacing: 3px;}
+.web_menu .web_navbar .web_nav .web_collapse li > a:hover{color: #c85b5f;}
+.web_navbar .web_btn-navbar{float: none; background: #f0f0f0; color: #fff; margin-right: 0; margin-left: 0; margin-bottom: 2px; margin-top: 0;}
+.web_navbar .web_btn-navbar:hover{background: #c85b5f; color: #fff;}
+.web_navbar .web_nav {
+  position: relative;
+  left: 0;
+  display: block;
+  margin: 0 10px 0 0;
+}
+.web_navbar .web_nav > li {
+  float: left;
+  
+}
+.web_navbar .web_nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #777777;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.web_navbar .web_nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #777777;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.web_nav {
+  margin-bottom: 20px;
+  margin-left: 0;
+  list-style: none;
+}
+
+.web_nav > li > a {
+  display: block;
+}
+
+.web_nav > li > a:hover,
+.web_nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+

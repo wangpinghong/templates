@@ -3,20 +3,39 @@
 <html>
     <head>
         <meta charset="utf-8">
-            <title>{{ post.title }} | Wang-WenCong 作品集</title>
+            <title>王文琮的個人網站</title>
             <link href="//fonts.googleapis.com/css?family=Lemon" rel="stylesheet" type="text/c
                 ss">
                 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
                     rel="stylesheet" type="text/css">
                     <link href="https://wangpinghong.github.io/templates/css/style.css" rel="stylesheet" t
                         ype="text/css">
-    </head>
+                        <link href="https://wangpinghong.github.io/templates/css/headercss.css" rel="stylesheet" t
+                            ype="text/css">
+                            
+                            </head>
     <body>
-        <div class="header">
-            <h1 class="site-title text-center">
-                <a href="/">Wang-WenCong 作品集</a>
-            </h1>
+        <div class="wb_container">
+            <div class="web_site-header">
+                <div class="web_logo">
+                    <h1>Wang wen-cong </h1>
+                </div>
+                <div class="web_menu">
+                    <div class="web_navbar">
+                        <div class="web_collapse">
+                            <ul class="web_nav">
+                                <li class="web_active"> <a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About</a></li>
+                                <li><a href="{% url 'album' %}">Albums</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                    
+                </div>
+            </div>
         </div>
+
         <div class="container post post-detail">
             <div class="post-heading">
                 <h1 class="title">{{ post.title }}</h1>

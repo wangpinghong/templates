@@ -1,17 +1,17 @@
-<! - - home.html - ->
+<! - - album.html - ->
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-            <title>Testing Site</title>
+            <title>王文琮的個人網站</title>
             <link href="//fonts.googleapis.com/css?family=Lemon" rel="stylesheet" type="text/c
                 ss">
                 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
                     rel="stylesheet" type="text/css">
                     <link href="https://wangpinghong.github.io/templates/css/style.css" rel="stylesheet" t
                         ype="text/css">
-                        <link href="https://wangpinghong.github.io/templates/css/headerstyle.css" rel="stylesheet" t
+                        <link href="https://wangpinghong.github.io/templates/css/headercss.css" rel="stylesheet" t
                             ype="text/css">
                         
                 </head>
@@ -25,10 +25,10 @@
                     <div class="web_navbar">
                         <div class="web_collapse">
                             <ul class="web_nav">
-                                <li class="web_active"><a href="index.html">Home</a></li>
-                                <li><a href="About.html">About</a></li>
-                                <li><a href="">Albums</a></li>
-                                <li><a href="Contact.html">Contact</a></li>
+                                <li class="web_active"> <a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About</a></li>
+                                <li><a href="{% url 'album' %}">Albums</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div>

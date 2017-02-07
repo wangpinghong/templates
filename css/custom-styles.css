@@ -164,4 +164,113 @@ right: 30px;
 left: auto;
 }
 
+/* ==========================================================================
+    General styles stars here
+   ========================================================================== */
+	.featured-heading{background: #f0f0f0; text-align: center; text-transform: uppercase; padding-top: 50px; padding-bottom: 70px;}
+	.featured-heading h1{font-size: 30px; line-height: 30px; color: #fff;letter-spacing: 2px; font-family: 'source_sans_problack';}
+	.featured-heading h2{font-family: 'source_sans_prolight'; font-size: 24px; line-height: 30px; letter-spacing: 1px;
+                         color: #fff; font-weight: normal;}
+    .featured-heading .form-horizontal{margin-top: 25px;}
+    .featured-heading .form-horizontal .btn, input{text-transform: uppercase; font-size: 15px; color: #fff !important; }
+    .featured-heading .form-horizontal .btn{padding: 11px 25px; opacity: 0.8; background: #df8080; border: none;  color: #fff; box-shadow: none;}
+    .featured-heading .form-horizontal input{padding: 19px; padding-left: 8px; opacity: 0.8; background: none; border: 2px solid #df8080; border-right:none; color: #fff !important; }
+  
+
+	.featured-blocks{padding: 75px 30px; background: #fafafa;}
+	.featured-blocks .media .media-body h1{color: #716a72; font-size: 24px; line-height: 30px; padding-bottom: 25px; 
+                                             font-family: 'source_sans_problack'; text-transform: uppercase;}
+    .featured-blocks .media .media-heading{margin-bottom: 0;}
+    .featured-blocks .media .media-body .btn{color: #fff; padding: 9px 10px; border-radius: 5px; background: #c85b5f; text-transform: uppercase; border:none; text-shadow: none; font-family: 'source_sans_problack';
+                                    letter-spacing: 2px; font-size: 16px; line-height: 17px;}
+    .featured-blocks .media .media-body .btn:hover{background: #716a72; color: #fff;}
+
+	.featured-content{padding:70px 0; background: #fff;}
+    .featured-content .block{ text-align: right; text-transform: uppercase;}
+    .featured-content .block .btn{color: #fff; padding: 12px 10px; border-radius: 5px; background: #c85b5f; text-transform: uppercase; border:none; text-shadow: none; font-family: 'source_sans_problack';
+                                    letter-spacing: 2px; font-size: 17px;}
+    .featured-content .block .btn:hover{background: #716a72; color: #fff;}
+    .featured-content .block h1{color: #c85b5f; font-size: 30px; letter-spacing: 1px; line-height:30px; font-family: 'source_sans_problack';}
+    .featured-content .block h2{color: #9d9d9d; font-size: 24px; line-height: 30px;font-family: 'source_sans_prolight'; padding-bottom: 25px;}
+    .featured-content .block-content h3{color: #716a72; font-family: 'source_sans_proregular'; font-size: 19px; line-height: 24px; text-decoration: underline; padding-bottom: 22px;}
+	
+	.tabs{background: #fafafa; padding: 55px 30px;}
+  .tabs .ruler-bottom{border-bottom: none;}
+    .tabs ul{border-bottom: none; margin: 0;}
+    .tabs ul li{  background: #f2f2f2; border-radius: 3px 3px 0 0; margin-right: 8px; }
+    .tabs ul li:hover{background: #f2f2f2;}
+    .tabs .nav-tabs > li > a:hover{border-bottom: none;}
+    .tabs ul li a{color: #c85b5f; font-size: 18px; letter-spacing: 1px; padding: 20px 0; padding-left: 25px; padding-right: 40px;
+                      text-transform: uppercase; font-family: 'source_sans_problack'; border: 1px solid #eee; border-bottom: none;}
+    .tabs .nav-tabs > .active > a{ color: #c85b5f; border-bottom: none;}
+    .tabs .nav-tabs > .active > a:hover{ color: #c85b5f; border-bottom: none;}
+    .tabs .tab-content{background: #fff;}
+    .tabs .tab-content{padding: 30px 0; border: 1px solid #eee; border-radius: 0 5px 5px 5px;}
+    .tabs .tab-content .block{padding: 0 30px;}
+    .tabs .tab-content .block .no-spacing{padding-left: 0;}
+    .tabs .nav-tabs a [class^="fw-icon-"]{display: inline-block; font-size: 15px; color: #716a72; margin-right: 5px;}
+
+
+
+/* ==========================================================================
+    Sidebar styles stars here
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+    Footer styles stars here
+   ========================================================================== */
+.site-info{background: #333333; color: #c85b5f; font-family: 'source_sans_proregular'; padding: 50px 25px; overflow: hidden; padding-left: 0;}
+.site-info strong{font-family: 'source_sans_problack'; color: #9d9d9d;}
+.site-info span{color: #9d9d9d;}
+.site-info h1{text-transform: uppercase;  font-family: 'source_sans_problack'; font-size: 24px; line-height: 30px; color: #fff;
+             padding-bottom: 25px; border-bottom: 1px solid #3f3f3f;}
+
+.site-info .site-address{margin-bottom: 20px;}
+.posts ul{margin: 0;}
+.posts ul li{list-style: none; border-bottom: 1px solid #3f3f3f; padding: 20px 0;}
+.posts ul li strong{font-family: 'source_sans_problack'; font-size: 15px; color: #c85b5f;}
+.posts ul li img{margin-right: 20px;}
+.posts ul li p{padding-left: 50px;}
+.posts ul li a [class^="fw-icon-"]{float: left; margin-right: 20px; font-size: 28px; color: #c85b5f;}
+.posts ul li a [class^="fw-icon-"]:hover{text-decoration: none; color: #fff;}
+
+.posts ul li h6 a{font-size: 15px; line-height: 20px; color: #9d9d9d; 
+    font-family: 'source_sans_problack'; border-bottom: 1px solid #9d9d9d; display: inline-block;}
+.posts ul li h6 a:hover{text-decoration: none; color: #fff;}
+.site-content .block .block-title{}
+.site-content .block .block-title h1{}
+.site-content .block .block-content{padding: 20px 0; }
+.site-content .block .block-content img{margin-right: 15px;}
+.site-content .block .block-content h6{ margin-bottom: 4px;}
+.site-content .block .block-content [class^="fw-icon-"]{float: left; margin-right: 20px; font-size: 28px;}
+
+.copy-rights{color: #8f8f8f; background: #202020; padding:30px 0;border-radius: 0 0 3px 3px; text-align: center; font-family: 'source_sans_problack';}
+.copy-rights a{color: #8f8f8f;}
+.copy-rights a:hover{ text-decoration: none; color: #c85b5f;}
+.copy-rights strong{color: #c85b5f;}
+.copy-rights strong a{color: #c85b5f;}
+.copy-rights strong a:hover{text-decoration: none; color: #8f8f8f;}
+
+
+/* ==========================================================================
+    Responsive Tweaks stars here
+   ========================================================================== */
+.navbar .btn-navbar{float: none; background: #f0f0f0; color: #fff; margin-right: 0; margin-left: 0; margin-bottom: 2px; margin-top: 0;}
+.navbar .btn-navbar:hover{background: #c85b5f; color: #fff;}
+
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.bw:hover {
+ 
+}
+
+
 

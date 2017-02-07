@@ -10,13 +10,17 @@ html, body {
 }
 
 body {
-    background-color: #fbf9f4;
+    background-color: #FFF;
     color: #004057;
     font-family: Ubuntu, Arial, sans-serif;
 }
 
 .header {
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    background-color: #FFF;
+>>>>>>> origin/master
     margin-bottom: 40px;
     padding: 20px 0;
     position: relative;
@@ -42,14 +46,14 @@ hr.fancy-line {
 hr.fancy-line:before {
     content:'';
     height: 10px;   /* half the height of :after */
-    background-color: #fff;
+    background-color: #f0f0f0;
 }
 
 hr.fancy-line:after {
     top: 0em;
     height: 5px;
     border-bottom: 1px solid #fff;
-    background-color: #fff;
+    background-color: #f0f0f0;
 }
 
 hr.fancy-line:after, hr.fancy-line:before {
@@ -83,18 +87,18 @@ hr.fancy-line, hr.fancy-line:before {
 }
 
 .thumbnail.thumbnail-default {
-    background-color: rgba(255,255,255,0.5);
+    background-color: #f0f0f0;
 }
 
 .thumbnail img {
-    max-width: 100%;
+    max-width: 80%;
     vertical-align: middle;
     margin: -100%;
     position: relative;
 }
 
 .title, .title a {
-    color: #ff5e73;
+    color: #6C494D;
     text-decoration: none;
 }
 
@@ -104,8 +108,7 @@ hr.fancy-line, hr.fancy-line:before {
     margin: 0;
 }
 .site-title a {
-    color: rgba(255,255,255, 0.8);
-    color: #60482a;
+    color: #6C494D;
     text-shadow: -1px -1px #fff;
     text-decoration: none;
 }
@@ -121,7 +124,7 @@ hr.fancy-line, hr.fancy-line:before {
 }
 
 .post {
-    background-color: #fff;
+    background-color: #f0f0f0;
     border-radius: 15px;
     margin: 0 auto 40px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -142,7 +145,7 @@ hr.fancy-line, hr.fancy-line:before {
 .post-heading {
     padding: 8px 15px;
     position: relative;
-    color: #ff5e73;
+    color: #70575A;
     height: 100px;
 }
 
@@ -151,7 +154,7 @@ hr.fancy-line, hr.fancy-line:before {
     height: 150px;
     overflow: hidden;
     position: relative;
-    background-color: #fff;
+    background-color: #f0f0f0;
 }
 
 .read-more-block:before {
@@ -162,13 +165,7 @@ hr.fancy-line, hr.fancy-line:before {
     left: 0;
     bottom: 0;
     content: "";
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-9 */
 }
 
 .post-footer {
@@ -188,8 +185,8 @@ hr.fancy-line, hr.fancy-line:before {
 }
 
 .post .read-more:hover {
-    background-color: #04cac4;
-    border-color: #04cac4;
+    background-color: #31977F;
+    border-color: #D6E6E6;
     color: #fff;
     transition: all 0.2s ease-in;
 }
@@ -200,7 +197,7 @@ hr.fancy-line, hr.fancy-line:before {
     right: 0px;
     bottom: 0px;
     padding: 5px 10px;
-    background-color: #04cac4;
+    background-color: #858985;
     font-size: 16px;
 }
 

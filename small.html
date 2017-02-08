@@ -13,7 +13,14 @@
                         ype="text/css">
                         <link href="https://wangpinghong.github.io/templates/css/headercss.css" rel="stylesheet" t
                             ype="text/css">
-                        
+                            <script>
+                                function showAlbums() {
+                                    document.getElementById("c_ul").style.visibility="visible";
+                                }
+                            function hideAlbums() {
+                                document.getElementById("c_ul").style.visibility="hidden";
+                            }
+                            </script>
                 </head>
     <body>
         <div class="wb_container">
@@ -27,8 +34,14 @@
                             <ul class="web_nav">
                                 <li class="web_active"> <a href="{% url 'index' %}">Home</a></li>
                                 <li><a href="{% url 'about' %}">About</a></li>
-                                <li><a href="{% url 'album' %}">Albums</a></li>
+                                <li class="web_active"><a href="" onmouseover="showAlbums();" onmouseout="hideAlbums();">Albums</a></li>
                                 <li><a href="{% url 'contact' %}">Contact</a></li>
+                            </ul>
+                            <ul class="web_nav" id="c_ul" onmouseover="showAlbums();" onmouseout="hideAlbums();">
+                                <li><a href="{% url 'album2' %}">地方風情</a></li>
+                                <li><a href="{% url 'album3' %}">原始森林</a></li>
+                                <li class="web_active"><a href="{% url 'album4' %}">速寫小品</a></li>
+                                <li><a href="{% url 'album1' %}">遊牧民族</a></li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div>
@@ -37,27 +50,27 @@
             </div>
         </div>
         <div class="container">
-            {% for post in post_list reversed %}
+            {% for small in small_list reversed %}
             <div class="post-wrapper">
                 <div class="post">
                     <div class="post-heading">
                         <h2 class="title">
-                            <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+                            <a href="{% url 'small_detail' pk=smallt.pk %}">{{ small.title }}</a>
                         </h2>
-                        <div class="date">{{ post.tag }}</div> 
+                        <div class="date">{{ small.tag }}</div>
                     </div>
-                    {% if post.photo %}
+                    {% if small.photo %}
                     <div class="thumbnail">
-                        <img src="{{ post.photo }}" alt="">
+                        <img src="{{ small.photo }}" alt="">
                     </div>
                     {% else %}
                     <div class="thumbnail thumbnail-default"></div>
                     {% endif %}
                     <div class="post-content read-more-block">
-                        {{ post.content }}
+                        {{ small.content }}
                     </div>
                     <div class="post-footer">
-                        <a class="read-more" href="{% url 'post_detail' pk=post.pk %}">
+                        <a class="read-more" href="{% url 'small_detail' pk=small.pk %}">
                             Read More <i class="fa fa-arrow-right"></i>
                         </a>
                     </div>

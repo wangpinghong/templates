@@ -1,4 +1,5 @@
-<!-- templates/post.html -->
+<! - - album.html local - ->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,7 +21,7 @@
                                 document.getElementById("c_ul").style.visibility="hidden";
                             }
                             </script>
-                            </head>
+                </head>
     <body>
         <div class="wb_container">
             <div class="web_site-header">
@@ -31,16 +32,16 @@
                     <div class="web_navbar">
                         <div class="web_collapse">
                             <ul class="web_nav">
-                                <li class="web_active"> <a href="{% url 'index' %}">Home</a></li>
-                                <li><a href="{% url 'about' %}">About</a></li>
-                                <li class="web_active"><a href="" onmouseover="showAlbums();" onmouseout="hideAlbums();">Albums</a></li>
+                                <li> <a href="{% url 'index' %}">Home</a></li>
+                                <li class="web_active"><a href="{% url 'about' %}">About</a></li>
+                                class="web_active"
                                 <li><a href="{% url 'contact' %}">Contact</a></li>
                             </ul>
                             <ul class="web_nav" id="c_ul" onmouseover="showAlbums();" onmouseout="hideAlbums();">
-                                <li><a href="{% url 'album2' %}">地方風情</a></li>
+                                <li class="web_active"><a href="{% url 'album2' %}">地方風情</a></li>
                                 <li><a href="{% url 'album3' %}">原始森林</a></li>
                                 <li><a href="{% url 'album4' %}">速寫小品</a></li>
-                                <li class="web_active"><a href="{% url 'album1' %}">遊牧民族</a></li>
+                                <li><a href="{% url 'album1' %}">遊牧民族</a></li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div>
@@ -48,18 +49,34 @@
                 </div>
             </div>
         </div>
-
-        <div class="container post post-detail">
-            <div class="post-heading">
-                <h1 class="title">{{ nomads.title }}</h1>
-                <div class="date">{{ nomads.tag }}</div>
+        <div class="container">
+            {% for local in local_list reversed %}
+            <div class="post-wrapper">
+                <div class="post">
+                    <div class="post-heading">
+                        <h2 class="title">
+                            <a href="{% url 'local_detail' pk=local.pk %}">{{ local.title }}</a>
+                        </h2>
+                        <div class="date">{{ local.tag }}</div>
+                    </div>
+                    {% if local.photo %}
+                    <div class="thumbnail">
+                        <img src="{{ local.photo }}" alt="">
+                    </div>
+                    {% else %}
+                    <div class="thumbnail thumbnail-default"></div>
+                    {% endif %}
+                    <div class="post-content read-more-block">
+                        {{ local.content }}
+                    </div>
+                    <div class="post-footer">
+                        <a class="read-more" href="{% url 'local_detail' pk=local.pk %}">
+                            Read More <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <img class="photo" src="{{ nomads.photo }}" alt="Cover photo for {{ nomads.title }
-                }">
-            <hr class="fancy-line">
-            <div class="post-content">
-                {{ nomads.content }}
-            </div>
+            {% endfor %}
         </div>
     </body>
 </html>

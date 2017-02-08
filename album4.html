@@ -1,4 +1,5 @@
-<!-- templates/post.html -->
+<! - - album4.html Small- ->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,7 +21,7 @@
                                 document.getElementById("c_ul").style.visibility="hidden";
                             }
                             </script>
-                            </head>
+                </head>
     <body>
         <div class="wb_container">
             <div class="web_site-header">
@@ -39,8 +40,8 @@
                             <ul class="web_nav" id="c_ul" onmouseover="showAlbums();" onmouseout="hideAlbums();">
                                 <li><a href="{% url 'album2' %}">地方風情</a></li>
                                 <li><a href="{% url 'album3' %}">原始森林</a></li>
-                                <li><a href="{% url 'album4' %}">速寫小品</a></li>
-                                <li class="web_active"><a href="{% url 'album1' %}">遊牧民族</a></li>
+                                <li class="web_active"><a href="{% url 'album4' %}">速寫小品</a></li>
+                                <li><a href="{% url 'album1' %}">遊牧民族</a></li>
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div>
@@ -48,18 +49,34 @@
                 </div>
             </div>
         </div>
-
-        <div class="container post post-detail">
-            <div class="post-heading">
-                <h1 class="title">{{ nomads.title }}</h1>
-                <div class="date">{{ nomads.tag }}</div>
+        <div class="container">
+            {% for small in small_list reversed %}
+            <div class="post-wrapper">
+                <div class="post">
+                    <div class="post-heading">
+                        <h2 class="title">
+                            <a href="{% url 'small_detail' pk=small.pk %}">{{ small.title }}</a>
+                        </h2>
+                        <div class="date">{{ small.tag }}</div>
+                    </div>
+                    {% if small.photo %}
+                    <div class="thumbnail">
+                        <img src="{{ small.photo }}" alt="">
+                    </div>
+                    {% else %}
+                    <div class="thumbnail thumbnail-default"></div>
+                    {% endif %}
+                    <div class="post-content read-more-block">
+                        {{ small.content }}
+                    </div>
+                    <div class="post-footer">
+                        <a class="read-more" href="{% url 'small_detail' pk=small.pk %}">
+                            Read More <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <img class="photo" src="{{ nomads.photo }}" alt="Cover photo for {{ nomads.title }
-                }">
-            <hr class="fancy-line">
-            <div class="post-content">
-                {{ nomads.content }}
-            </div>
+            {% endfor %}
         </div>
     </body>
 </html>

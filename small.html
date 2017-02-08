@@ -1,0 +1,69 @@
+<! - - album.html - ->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>王文琮的個人網站</title>
+            <link href="//fonts.googleapis.com/css?family=Lemon" rel="stylesheet" type="text/c
+                ss">
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+                    rel="stylesheet" type="text/css">
+                    <link href="https://wangpinghong.github.io/templates/css/style.css" rel="stylesheet" t
+                        ype="text/css">
+                        <link href="https://wangpinghong.github.io/templates/css/headercss.css" rel="stylesheet" t
+                            ype="text/css">
+                        
+                </head>
+    <body>
+        <div class="wb_container">
+            <div class="web_site-header">
+                <div class="web_logo">
+                    <h1>Wang wen-cong </h1>
+                </div>
+                <div class="web_menu">
+                    <div class="web_navbar">
+                        <div class="web_collapse">
+                            <ul class="web_nav">
+                                <li class="web_active"> <a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About</a></li>
+                                <li><a href="{% url 'album' %}">Albums</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {% for post in post_list reversed %}
+            <div class="post-wrapper">
+                <div class="post">
+                    <div class="post-heading">
+                        <h2 class="title">
+                            <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+                        </h2>
+                        <div class="date">{{ post.tag }}</div> 
+                    </div>
+                    {% if post.photo %}
+                    <div class="thumbnail">
+                        <img src="{{ post.photo }}" alt="">
+                    </div>
+                    {% else %}
+                    <div class="thumbnail thumbnail-default"></div>
+                    {% endif %}
+                    <div class="post-content read-more-block">
+                        {{ post.content }}
+                    </div>
+                    <div class="post-footer">
+                        <a class="read-more" href="{% url 'post_detail' pk=post.pk %}">
+                            Read More <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>

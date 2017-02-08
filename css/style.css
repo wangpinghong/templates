@@ -232,3 +232,19 @@ hr.fancy-line, hr.fancy-line:before {
 .post-detail .post-content {
     height: auto;
 }
+
+#index_container{
+                                    background-color:white;
+                                    color:white;
+                                    -webkit-box-shadow: none;
+                                    box-shadow: none;
+                                    text-shadow:none;
+                                }
+                            #index_container img{
+                                width:100%;
+                                background-color:white;
+                                color:white;
+                                box-shadow: none;
+                                -webkit-box-shadow: none;
+                                text-shadow:none;
+                            }

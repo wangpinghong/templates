@@ -98,3 +98,14 @@
 #c_ul{
   visibility:hidden;
 }
+  .web_footer{
+                    height:50px;
+                    background-color:#fafafa;
+                }
+            .web_copy-rights{
+                text-align:center;
+                vertical-align:middle;
+                line-height:50px;
+                font-family: 'source_sans_problack';
+                color: #716a72;
+            }

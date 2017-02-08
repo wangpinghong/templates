@@ -1,5 +1,7 @@
 *, *:before, *:after {
-    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -125,7 +127,7 @@ hr.fancy-line, hr.fancy-line:before {
     background-color: #f0f0f0;
     border-radius: 15px;
     margin: 0 auto 40px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    
     position: relative;
 }
 
@@ -136,7 +138,7 @@ hr.fancy-line, hr.fancy-line:before {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: linear-gradient(rgba(105, 106, 97,0), rgba(105, 106, 97,.1));
+    
     border-radius: 0 0 15px 15px;
 }
 
